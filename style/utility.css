@@ -1,1 +1,13 @@
 /* Specific classes for styling that might need to be overwritten */
+
+.ft-primary{
+    font-family: var(--primaryFont);
+}
+
+.ft-secondary{
+    font-family: var(--secondaryFont);
+}
+
+.ft-alt{
+    font-family: var(--altFont);
+}
