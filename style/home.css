@@ -1,0 +1,90 @@
+
+
+#title{
+    /* background-color: rgba(0, 47, 255, 0.062); */
+    /* min-height: 500px; */
+    margin-top: 13vh;
+    width: min(var(--maxWidth), 95%);
+    overflow: visible;
+}
+
+    #title .content{
+        padding: 0 10% 0 5%;
+        display: grid;
+        grid-template-columns: 35% 1fr;
+    }
+
+   #title .image {
+    padding: 1vw;
+   }
+    #title .image img{
+        overflow: visible;
+        display: block;
+        aspect-ratio: 4/5;
+        max-width: 100%;
+        object-fit: cover;
+        box-shadow: -6px 7px 0px rgba(0, 0, 0, 0.25);
+
+    }
+
+    #title .text-part{
+        padding: 1em 3em;
+    }
+
+        #title .text-part .pre-title{
+            display: flex;
+            justify-content: space-between;
+            width: 97%;
+            margin: 0 0 1em auto;
+            font-size: clamp(2px, 1.2rem, 1.2vw);
+
+            font-weight: bold;
+            font-style: italic;
+        }
+
+            #title .text-part .pre-title .stars{
+                display: flex;
+                gap: 5em;
+                text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            #title .text-part .title{
+                font-weight: lighter;
+                font-size: clamp(10px, 5rem, 6vw);
+                line-height: 100%;
+                margin: .1em 0;
+                white-space: nowrap;
+                text-shadow: -2px 3px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            #title .text-part .line{
+                width: 40%;
+                margin: 1em 0 1em auto;
+                border-bottom: .2vw solid white;
+            }
+
+            #title .description{
+                max-width: 65ch;
+                font-size: clamp(4px, 1rem, 1.1vw);
+                margin: 1em 0 1em auto;
+                text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.103);
+                color: var(--darkerPurple);
+            }
+
+                #title .description .special{
+                    font-size: clamp(10px, 2rem,2.3vw);
+                    line-height: 80%;
+                }
+
+            #title .text-part .cta .btn{
+                border-radius: 1vmin;
+                min-width: 10vw;
+                margin: .2em 0;
+                font-size: 1.4rem;
+                letter-spacing: 2px;
+            }
+
+            #title .text-part .cta > i{
+                font-size: 1.2rem;
+                margin: 0 1em;
+            }

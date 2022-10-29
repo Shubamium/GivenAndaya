@@ -10,55 +10,95 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/utility.css">
+    <link rel="stylesheet" href="style/home.css">
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
 </head>
 <body>
+   <div class="container">
+        <!-- header -->
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <ul class="navigation">
 
-    <!-- Navigation -->
-    <nav>
-        <ul class="navigation">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
 
-            <li>
-                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-            </li>
+                    <li>
+                        <a href="#"> <i class="fa-solid fa-user"></i> About</a>
+                        <!-- Sub Nav -->
+                        <div class="sub-nav">
+                            <a href="#"> <i class="fa-solid fa-star"></i> Favorites</a>
+                            <a href="#"> <i class="fa-solid fa-thumbs-up"></i></i> Likes & Dislikes</a>
+                        </div>
+                    </li>
 
-            <li>
-                <a href="#"> <i class="fa-solid fa-user"></i> About</a>
-                <!-- Sub Nav -->
-                <div class="sub-nav">
-                    <a href="#"> <i class="fa-solid fa-star"></i> Favorites</a>
-                    <a href="#"> <i class="fa-solid fa-thumbs-up"></i></i> Likes & Dislikes</a>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-palette"></i> Hobbies</a>
+
+                        <!-- Sub Nav -->
+                        <div class="sub-nav">
+                            <a href="#"> <i class="fa-solid fa-paintbrush"></i> Art</a>
+                            <a href="#"> <i class="fa-solid fa-gamepad"></i> Games</a>
+                            <a href="#"> <i class="fa-solid fa-microphone"></i> Music</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-solid fa-images"></i> Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-solid fa-address-book"></i> Contacts</a>
+                    </li>
+                </ul>
+
+                <div class="line"></div>
+                <div class="action">
+                    <button class="btn btn-cta ft-primary"> <i class="fa-solid fa-pen"></i> Write me a message!</button>
+                    <i class="fa-solid fa-star"></i>
                 </div>
-            </li>
+            </nav>
 
-            <li>
-                <a href="#"><i class="fa-solid fa-palette"></i> Hobbies</a>
+        </header>
 
-                <!-- Sub Nav -->
-                <div class="sub-nav">
-                    <a href="#"> <i class="fa-solid fa-paintbrush"></i> Art</a>
-                    <a href="#"> <i class="fa-solid fa-gamepad"></i> Games</a>
-                    <a href="#"> <i class="fa-solid fa-microphone"></i> Music</a>
+        <main>
+            <!-- Title Section -->
+            <section id="title" class="confine">
+                <div class="content">
+                    <div class="image">
+                        <img src="media/image/picture/main.png" alt="given" class=" br-small ol-white">
+                    </div>
+                    <article class="text-part ta-right">
+
+                        <div class="pre-title">
+                            <p class="ft-secondary cr-white">`g-i-v-e-n`  `m-i-k-a-e-l-a`  `a-n-d-a-y-a`</p>
+                            <div class="stars cr-blue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <h1 class="title cr-white ft-alt">Given <span class="cr-blue">Mikalea Andaya</span></h1>
+                        <div class="line"></div>
+
+                        <p class="description ft-primary"><span class="special ft-alt cr-white">Hiiii!, I'm Given</span>, but I’m usually called Ven, I’ve been homeschooled for about 3 years now, and No, it doesnt mean I dont have any social life.<br>
+                            <br> I hate sports and walking, well I just dont like moving in general, but my body still aches all the time, I get scared a lot and overthink stuff, but I try my best to improve!
+                        </p>
+                        
+                        <div class="cta">
+                            <i class="fa-solid fa-star cr-white"></i>
+                            <button class="btn btn-cta">Say Hi! <i class="fa-solid fa-envelope"></i></button>
+                        </div>
+                    </article>
                 </div>
-            </li>
-
-            <li>
-                <a href="#"><i class="fa-solid fa-images"></i> Gallery</a>
-            </li>
-
-            <li>
-                <a href="#"><i class="fa-solid fa-address-book"></i> Contacts</a>
-            </li>
-        </ul>
-
-        <div class="line"></div>
-        <div class="action">
-            <button class="btn btn-cta ft-primary"> <i class="fa-solid fa-pen"></i> Write me a message!</button>
-            <i class="fa-solid fa-star"></i>
-        </div>
-    </nav>
-
+            </section>
+        </main>
+    </div>
+  
 </body>
 </html>

@@ -11,3 +11,41 @@
 .ft-alt{
     font-family: var(--altFont);
 }
+
+.cr-blue{
+    color: var(--blue);
+}
+
+.cr-white{
+    color: white;
+}
+
+.confine{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
+
+
+.ta-left{
+    text-align: left;
+
+}
+
+.ta-center{
+    text-align: center;
+
+}
+
+.ta-right{
+    text-align: right;
+}
+
+
+.br-small{
+    border-radius: 1em;
+}
+
+
+.ol-white{
+    outline: 4px solid white;
+}
