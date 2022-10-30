@@ -28,6 +28,7 @@
     --lightPurple: #FFE8FB;
     --midPurple: #EFCEFF;
     --purple: #D7B7FF; 
+    --saturatePurple: #B68CEB;
     --darkPurple: #786385;
     --darkerPurple: #6D4B83;
     --blue:#ABF0FF;
@@ -112,15 +113,16 @@ nav{
             box-shadow: .1em .1em 0px 1px #78638549;
 
         }
+
         nav .navigation li .sub-nav i{
             min-width: 1.5rem;
         }
+        
         nav .navigation li:hover .sub-nav{
             visibility: visible;
             opacity: 1;
             top: 100%;
             transition: all 350ms ease;
-
             
         }
 

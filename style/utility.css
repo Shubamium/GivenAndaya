@@ -12,6 +12,9 @@
     font-family: var(--altFont);
 }
 
+.ft-initial{
+    font-family: initial;
+}
 .cr-blue{
     color: var(--blue);
 }
@@ -36,6 +39,12 @@
 
 }
 
+.ta-justify{
+    text-align: justify;
+
+}
+
+
 .ta-right{
     text-align: right;
 }
@@ -56,4 +65,15 @@
 
 .bg-purple{
     background-color: var(--purple);
+}
+
+.wave-end{
+    position: absolute;
+    top: -1px;
+    /* background-color: green; */
+
+}
+
+.relative{
+    position: relative;
 }
