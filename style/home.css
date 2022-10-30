@@ -138,13 +138,13 @@ body{
         background-color: white;
         border-radius: .5em;
         position: absolute;
-        padding: .4em 1em;
+        padding: .4em 4em 0 1em;
         top: -1.2em;
         left: 1em;
         font-family: var(--secondaryFont);
         font-size: min(1.4rem, 1.4vw);
         box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
-
+        color: var(--darkerPurple);
     }
 
     .text-part .panel{
@@ -200,7 +200,18 @@ body{
 
 }
     #hobby .image{
+        height: 100%;
         padding: .3em;
+        box-shadow: none;
+        /* background-color: green; */
+        position: relative;
+    }
+    #hobby .fixed{
+        top: 1em;
+        left: 0;
+        position: sticky;
+        box-shadow: -3px 5px 0px rgba(0, 0, 0, 0.25);
+
     }
     #hobby .text-part{
         padding-top: 3em;
@@ -208,4 +219,14 @@ body{
 
     #hobby .section-title{
         margin-left:  0 ;
+    }
+
+    #hobby .panel:nth-child(2){
+        margin-top: 3em;
+    }
+
+    #hobby .btn-cta{
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
     }
