@@ -103,7 +103,7 @@ nav{
 
         /* Sub Nav */
         nav .navigation li .sub-nav{
-            /* visibility: hidden; */
+            visibility: hidden;
             opacity: 0;
             background-color:var(--darkPurple);
             border-radius: 1em;
@@ -116,7 +116,7 @@ nav{
             min-width: 1.5rem;
         }
         nav .navigation li:hover .sub-nav{
-            /* visibility: visible; */
+            visibility: visible;
             opacity: 1;
             top: 100%;
             transition: all 350ms ease;
