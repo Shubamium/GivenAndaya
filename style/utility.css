@@ -47,5 +47,13 @@
 
 
 .ol-white{
-    outline: 4px solid white;
+    outline: min(4px,.65vh) solid white;
+}
+
+.ol-purple{
+    outline: min(4px, .65vh) solid var(--darkerPurple);
+}
+
+.bg-purple{
+    background-color: var(--purple);
 }
