@@ -114,3 +114,12 @@
 .hidden{
     display: none !important;
 }
+
+
+.mg-center{
+    margin: 0 auto;
+}
+
+.block{
+    display: block;
+}
