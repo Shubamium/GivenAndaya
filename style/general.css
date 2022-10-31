@@ -32,6 +32,7 @@
     --darkPurple: #786385;
     --darkerPurple: #6D4B83;
     --blue:#ABF0FF;
+    --vanishBlue: #D1F7FF;
     --darkBlue:#6E8992;
     --maxWidth: 1400px;
 }
@@ -205,5 +206,26 @@ nav{
 }
 
 footer{
-    
+    position: relative;
+    z-index: 200;
+    height: max(500px, 50vh);
+    background-color: var(--purple);
+    border-top: 5px dashed white;
+
+    display: flex;
+    justify-content: start;
+    padding-top: 4em;
+    align-items: center;
+    flex-direction: column;
 }
+
+    footer .web-name{
+        font-size: min(6vw,3rem);
+        color: var(--darkerPurple);
+        text-shadow: -2px 2px #6d4b832d;
+    }
+
+    footer .maker{
+        color: var(--saturatePurple);
+        font-weight: 300;
+    }

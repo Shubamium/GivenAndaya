@@ -1,6 +1,6 @@
 
 body{
-    min-height: 1500vh;
+    /* min-height: 1500vh; */
     /* background-color: red; */
 }
 
@@ -515,6 +515,7 @@ body{
         box-shadow: 0 .3em 0px 1px #78638549;
         margin-top: 1em;
         margin-bottom: 2em;
+        background-color: var(--vanishBlue);
     }
 
     #cat{
