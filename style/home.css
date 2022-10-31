@@ -297,6 +297,36 @@ body{
         }
 
 
+        #family .members {
+            position: relative;
+        }
+
+        #family .members .controls{
+            /* background-color: red; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width:100%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2vw;
+        }
+
+        #family .members .controls button{
+            padding: 1em;
+            background-color: var(--saturatePurple);
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            font-size: 2.2rem;
+            padding: .4em;
+            padding-top: .2em;
+            color: var(--purple);
+            border: 2px solid var(--darkerPurple);
+        }
+
+
+
         #family .member{
             /* background-color: red; */
             display: grid;
@@ -304,7 +334,7 @@ body{
             max-width: min(1000px, 100%);
             margin: 0 auto;
 
-            min-height: 500px;
+            min-height: 700px;
         }
             
             #family .member .image{
