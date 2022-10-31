@@ -475,6 +475,9 @@ body{
         #friend .select-item img{
             width: min(350px, 70%);
         }
+        #friend .select-open:hover{
+            transform: scale(1.2);
+        }
 
         #friend .panel {
             outline: none;

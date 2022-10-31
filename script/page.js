@@ -7,8 +7,8 @@ for(let i = 0; i < allPageContainer.length; i++){
 }
 
 function pageInit(pageContainer){
-    let prevButton = document.querySelector(".prev");
-    let nextButton = document.querySelector(".next");
+    let prevButton = pageContainer.querySelector(".prev");
+    let nextButton = pageContainer.querySelector(".next");
 
     // If there is no button
     if(prevButton == null || nextButton == null){
