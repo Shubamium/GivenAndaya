@@ -707,31 +707,69 @@ body{
             
         }
 
-.bg-decor{
-    position:absolute;
-    top: 0%;
-    left: 0;
-    width: 100vw;
-    height: 0%;
-    overflow: visible;
+
+        .bg-decor{
+            opacity: 0;
+            position:absolute;
+            top: 0%;
+            left: 0;
+            width: 100vw;
+            height: 0%;
+            overflow: visible;
+            z-index: -50;
+            transition: opacity 500ms ease;
+
+        }
+
+@media screen and (max-width:2500px) {
+    .bg-decor{
+        opacity: 1;
+        transition:  opacity 500ms ease;
+    }
+        .bg-decor > *{
+            position: absolute;
+            z-index: -10;
+            pointer-events: none;
+            transform: translate(-50%,-50%);
+        }
+        .bg-decor .circle{
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+    
+        }
+    
+        .bg-decor .first{
+            top: 0%;
+            left: calc(50vw - 550px);
+            width: 1500px;
+            background-color: var(--purple);
+            z-index: -200;
+            
+        }
+    
+        .bg-decor .second{
+            top: 1000px;
+            left: calc(50vw + 1050px);
+            width: 1200px;
+            background-color: #FFE8FB;
+            z-index: -200;
+            
+        }
+        .bg-decor .third{
+            top: 1300px;
+            left: calc(50vw - 850px);
+            width: 1500px;
+            background-color: #FFE8FB;
+            z-index: -200;
+            
+        }
+        .bg-decor .forth{
+            top: 2000px;
+            left: calc(50vw + 750px);
+            width: 1200px;
+            background-color: #D3ABEC;
+            z-index: -250;
+            
+        }
+    
 }
-    .bg-decor > *{
-        position: absolute;
-        z-index: -10;
-        pointer-events: none;
-        transform: translate(-50%,-50%);
-    }
-    .bg-decor .circle{
-        border-radius: 50%;
-        aspect-ratio: 1/1;
-
-    }
-
-    .bg-decor .first{
-        top: 0%;
-        left: calc(50vw - 550px);
-        width: 1500px;
-        background-color: var(--purple);
-        z-index: -200;
-        
-    }
