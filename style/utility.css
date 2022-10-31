@@ -23,6 +23,33 @@
     color: white;
 }
 
+.cr-darkerPurple{
+    color: var(--darkerPurple);
+}
+.cr-lightYellow{
+    color: #FFE9BF;
+}
+
+.cr-velvet{
+    color: #BF3B57;
+}
+
+.cr-pink{
+    color: #EF87CC;
+}
+
+
+.td-underline{
+    text-decoration: underline;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
 .confine{
     max-width: var(--maxWidth);
     margin: 0 auto;
