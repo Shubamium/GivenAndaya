@@ -650,3 +650,32 @@ body{
             }
             
         }
+
+.bg-decor{
+    position:absolute;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    height: 0%;
+    overflow: visible;
+}
+    .bg-decor > *{
+        position: absolute;
+        z-index: -10;
+        pointer-events: none;
+        transform: translate(-50%,-50%);
+    }
+    .bg-decor .circle{
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+
+    }
+
+    .bg-decor .first{
+        top: 0%;
+        left: calc(50vw - 550px);
+        width: 1500px;
+        background-color: var(--purple);
+        z-index: -200;
+        
+    }
