@@ -191,6 +191,7 @@ body{
         margin-bottom: 2em;
     }
     
+   
     .section-title{
         background-color:  var(--purple);
         display: flex;
@@ -219,6 +220,14 @@ body{
         .section-title .line:nth-child(1), #hobby .section-title .line:nth-child(2){
             width: 30%;
         }
+
+    #intro .pointer2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(130%,80%);
+        scale: .9;
+    }
 
 #hobby{
     position:relative;
@@ -253,6 +262,23 @@ body{
         display: block;
         margin-left: auto;
         margin-right: 0;
+    }
+
+    #hobby .section-title{
+        rotate: -0.9deg;
+    }
+
+    #hobby .panel:nth-child(1){
+        rotate: 0.6deg;
+    }
+    #hobby .sekon{
+        rotate: -0.9deg;
+    }
+
+    #hobby .pointer3{
+        margin: .3em 0 .3em auto;
+        display: block;
+        scale: .7;
     }
 
 
@@ -498,8 +524,15 @@ body{
         #friend .select-item img{
             width: min(350px, 70%);
         }
+
+        #friend .select-open{
+           cursor: pointer;
+           transition: all 250ms ease;
+        }
         #friend .select-open:hover{
             transform: scale(1.2);
+            transition: all 450ms ease;
+            filter: brightness(70%);
         }
 
         #friend .panel {
