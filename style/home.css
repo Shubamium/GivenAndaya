@@ -104,11 +104,24 @@ body{
                 margin: 0 1em;
             }
 
+            #title .text-part .cta{
+                position: relative;
+            }
+            #title .text-part .cta .pointer{
+                position: absolute;
+                transform: translate(-95%, 5%);
+                width:min(1200px,70vw);
+                top: 20px;
+            }
+
 #intro, #hobby{
     /* background-color: green; */
     padding: 4em;
-    margin-top: 20px;
 }
+
+    #intro {
+        margin-top: 150px;
+    }
 
     #intro .image img, #hobby .image img{
         max-width: 100%;
@@ -125,6 +138,16 @@ body{
 
     #intro .text-part .panel{
         height: 100%;
+     
+    }
+
+    #intro .text-part .panel{
+        rotate: -1deg;
+     
+    }
+    
+    #intro .image{
+        rotate: 1deg;
      
     }
 
@@ -174,7 +197,7 @@ body{
         justify-content: space-evenly;
         align-items: center;
         border: min(4px, .3vw) solid white;
-        border-radius: 1em;
+        border-radius: 2em;
         box-shadow: -2px 4px 0px rgba(0, 0, 0, 0.25);
         max-width: 70%;
         margin:  2em 2em 2em auto;
