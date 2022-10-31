@@ -1,6 +1,6 @@
 
 body{
-    min-height: 500vh;
+    min-height: 1500vh;
     /* background-color: red; */
 }
 
@@ -236,8 +236,9 @@ body{
 #family{
 
     background-size: 200%;
-    min-height: 250vh;
+    /* min-height: 250vh; */
     position: relative;
+    padding-bottom: 300px;
 }
 
 /* Background */
@@ -376,4 +377,49 @@ body{
                 max-width: 35ch;
                 margin-bottom: 1em ;
             }
-       
+
+
+
+#friend{
+
+}
+
+    #friend .section-header{
+
+        padding: 2em;
+        border-bottom: 5px solid var(--purple);
+        position: relative;
+    }
+    #friend .section-header::before{
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        background: url("../media/image/background/plaid.webp");
+        /* mix-blend-mode: difference; */
+        background-size: 80vmin;
+        opacity: .4;
+    }
+
+    #friend .section-header h2{
+        font-size: 3rem;
+        text-align: right;
+        text-decoration: underline;
+        font-weight: 700;
+        letter-spacing: -0.06em;
+        
+        color: var(--darkerPurple); 
+        
+        filter: drop-shadow(2px 2px white);
+
+    }
+
+    #friend .friend-content{
+        min-height: 250vh;
+        background: url("../media/image/background/bg.png");
+        background-size: 25vmin;
+    }

@@ -69,11 +69,36 @@
 
 .wave-end{
     position: absolute;
-    top: -1px;
+    top: -2px;
     /* background-color: green; */
 
 }
 
+.no-height{
+    height: 0;
+}
+
+.wave-start{
+    position: absolute;
+    pointer-events: none;
+    bottom: -10px;
+    /* max-height: 200px; */
+    /* background-color: green; */
+    
+    z-index: -20;
+    /* background-color: green; */
+}
+
+@media screen and (min-width:1800px) {
+    .wave-start{
+        transform: scaleY(.2) translateY(200%);
+    }
+
+    .wave-end{
+        transform: scaleY(.3) translateY(-120%);
+    }
+    
+}
 .relative{
     position: relative;
 }
