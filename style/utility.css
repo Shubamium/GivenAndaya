@@ -105,6 +105,10 @@
     height: 0;
 }
 
+.nowrap{
+    white-space: nowrap;
+}
+
 .wave-start{
     position: absolute;
     pointer-events: none;

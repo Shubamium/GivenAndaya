@@ -82,4 +82,5 @@ main{
 .paragraph{
     font-size: var(--fs-500);
     color: var(--saturatePurple);
+    padding: .5em 0;
 }
