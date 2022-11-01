@@ -84,3 +84,48 @@ main{
     color: var(--saturatePurple);
     padding: .5em 0;
 }
+
+
+#section-divider{
+    height: 10px;
+    width: 100%;
+    border-bottom: 3px dashed white;
+    position: relative;
+    margin: 200px 0;
+}
+
+    #section-divider img{
+        position: absolute;
+        /* top: 0%; */
+        /* left: 50%;    */
+        left: 370px;
+        /* transform: translate(-50%,-50%); */
+        display: block;
+        top: -5em;
+    }
+
+    #section-divider .planet-bg{
+        top: 0%;
+        left: 50%;
+        /* background-color: red; */
+
+        mix-blend-mode: overlay;
+        transform-origin:  50% 52%;
+        animation: spin 100s linear infinite;
+        translate: -50% -50%;
+    }
+    
+    #section-divider .planet{
+        transform-origin: center 60%;
+        animation: spin 45s linear infinite ;
+        animation-direction: reverse;
+    }
+
+    @keyframes spin {
+        from{
+            transform:rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+    }
