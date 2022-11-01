@@ -4,7 +4,12 @@ body{
    
     background-blend-mode: overlay,normal;
 }
-
+:root{
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-400:1rem;
+    --fs-700:4rem;
+}
 .planet-header{
     position: absolute;
     transform: translate(-50%,-40%);
@@ -66,4 +71,15 @@ main{
 
     }
 
+.heading{
+    font-size: var(--fs-700);
+}
 
+.heading-small{
+    font-size: var(--fs-600);
+}
+
+.paragraph{
+    font-size: var(--fs-500);
+    color: var(--saturatePurple);
+}

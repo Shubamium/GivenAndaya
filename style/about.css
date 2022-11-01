@@ -1,0 +1,17 @@
+
+#title{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    padding:2em 2em;
+}
+    #title .text-part{
+        padding: 5em 4em;
+    }
+
+    #title .image img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        opacity: .8;
+        scale: 1.2;
+    }
