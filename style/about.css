@@ -138,3 +138,14 @@
         margin: 3em auto;
         display: block;
     }
+
+#friends{
+     margin: 1em;
+}
+
+    #friends .image img{
+        padding: 2em;
+        height: 60%;
+        width: 60%;
+        display: block;
+    }

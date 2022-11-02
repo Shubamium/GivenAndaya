@@ -46,6 +46,10 @@
 .bold{
     font-weight: bold;
 }
+.light{
+    font-weight: lighter;
+}
+
 
 .italic{
     font-style: italic;
