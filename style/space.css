@@ -248,3 +248,10 @@ main{
 footer{
     background-color: #1f1328e3;
 }
+
+.btn-space{
+    background-color: #6B2695;
+    color: var(--purple);
+    font-weight: 600;
+    outline: 1px solid white;
+}

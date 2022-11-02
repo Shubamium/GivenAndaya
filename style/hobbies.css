@@ -8,9 +8,6 @@
 }
 
 
-main{
-    min-height: 500vh;
-}
 #title{
     margin-top: 1em;
     padding: 4em;
@@ -141,3 +138,52 @@ main{
     animation: spin 13500ms ease infinite  reverse;
 
 }
+
+
+#commission{
+    margin: 2em;
+    text-align: center;
+
+}
+
+    #commission .paragraph{
+        max-width: 55ch;
+    }
+
+    #commission .image{
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        gap: 1em;
+        padding: 0 3em;
+        margin: 2em 0;
+    }
+        #commission .image > *{
+
+            overflow: hidden;
+        }
+
+        #commission .image .main{
+            /* background-color: green; */
+            height: 400px;
+            width: 100%;
+        }
+        #commission .image .side{
+            /* background-color: rgb(39, 46, 39); */
+            height: 400px;
+            width: 100%;
+        }
+        #commission .image .main img,
+        #commission .image .side img{
+            display: block;            
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 3vw;
+
+
+        }
+
+        #commission .btn-space{
+            font-size:1.4rem;
+        }
+
