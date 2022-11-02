@@ -40,3 +40,51 @@
         max-width: 33ch;
         margin:  0 0 0 auto;
     }
+
+
+
+#younger{
+    padding: 1em;
+    padding-top: 250px;
+}
+    #younger .image{
+        position: relative;
+        padding: 2em 0;
+    }
+
+    #younger .image .ufo{
+        position: absolute;
+        /* display: none; */
+        top: -150px;
+        left: 50%;
+        /* background-color: red; */
+        transform: translate(-35%);
+        animation: ufo 10500ms ease infinite;
+        /* background-color: red; */
+        /* transform-origin: bottom center; */
+    }
+
+
+    #younger .text-part .paragraph{
+        max-width: 45ch;
+        line-height: 95%;
+    }
+
+    @keyframes ufo {
+
+        0%{
+            left: calc(50% - 300px);
+            rotate: 5deg;
+        }
+        50%{
+            left: calc(50% + 200px);
+            rotate: -25deg;
+            top: -325px;
+        }
+        100%{
+            left: calc(50% - 300px);
+            rotate: 5deg;
+
+        }
+        
+    }
