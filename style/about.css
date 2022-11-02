@@ -110,3 +110,31 @@
         max-height: 100%;
         display: block;
     }
+
+#negative{
+    margin: 5em 0;
+}
+
+    #negative .top-text{
+        background-color: #6d4b8321;
+        max-width:85ch;
+        padding: 1em 2em;
+       
+    }
+
+    #negative .top-text .paragraph{
+        color: white;
+    }
+
+    #negative .top-text .paragraph, #negative .bottom-text .paragraph{
+        font-size: var(--fs-500);
+    }
+    
+    #negative .bottom-text{
+        max-width:65ch;
+    }
+
+    #negative img{
+        margin: 3em auto;
+        display: block;
+    }
