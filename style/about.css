@@ -88,3 +88,25 @@
         }
         
     }
+
+#moms{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    padding: 3em;
+    gap:2em;
+}
+    #moms .heading-small{
+        margin: .2em 0;
+    }
+    #moms .text-part{
+        padding: 2em;
+    }
+    #moms .text-part .paragraph{
+        font-size: var(--fs-400);
+    }
+
+    #moms .image img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
