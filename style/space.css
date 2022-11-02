@@ -52,7 +52,7 @@ main{
     margin-top: 350px;
 
     background-color: #1f1328e3;
-    min-height: 800vh;
+    /* min-height: 800vh; */
     border-radius: 1em;
     border: .53em solid white;
 

@@ -113,6 +113,7 @@
 
 #negative{
     margin: 5em 0;
+
 }
 
     #negative .top-text{
@@ -140,7 +141,10 @@
     }
 
 #friends{
-     margin: 1em;
+     /* margin: 1em; */
+     padding: 1em;
+    background-color: #170a1fb6;
+
 }
 
     #friends .image img{
@@ -149,3 +153,109 @@
         width: 60%;
         display: block;
     }
+
+
+#qa{
+    margin-top: 200px;
+}
+
+    #qa .section-header{
+        background-color: #3E2F4C;
+        padding: 2em;
+        border-bottom: 5px dashed var(--blue);
+    }
+
+
+.answer-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    justify-content: center;
+    gap: 1em;
+    padding: 20px 150px;
+    position: relative;
+    height: fit-content;
+    
+}
+    .answer-card{
+        /* background-color: red; */
+        position: relative;
+        /* overflow: hidden; */
+        perspective: 2500px;
+        /* width: 300px; */
+        aspect-ratio: 3/4;
+    }
+
+    
+
+        .answer-card .heading-small{
+            font-size: 1.8rem;
+        }
+
+        .answer-card .paragraph{
+            /* white-space: normal; */
+            /* word-break: break-all; */
+        }
+
+        .answer-card .card{
+            background-color: #6D4B83;
+            border-radius: 1em;
+            padding: .7em;
+            aspect-ratio: 3 /4;
+            border: 3px solid white;
+            
+            position: absolute;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+          
+        }
+
+        .answer-card .inner-card{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform .5s;
+            transform-style: preserve-3d;
+        }
+
+        .answer-card:hover .inner-card{
+            transform: rotateY(180deg);
+        }
+
+        .answer-card .card.answer{
+            transform: rotateY(180deg);
+            background-color: #3E2F4C;
+            border: 4px solid var(--blue);
+        }
+            .answer-card .card.answer .heading-small{
+                margin: .2em 0;
+            }
+            .answer-card .card.answer .paragraph{
+                padding: 0;
+                font-size: 1.2rem;
+            }
+            
+        .answer-card .card.question{
+            /* transform: rotateY(180deg); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .answer-card .card.question .heading-small{
+            color:var(--blue);
+        }
+
+        .answer-card .card.question .paragraph{
+            color:  white;
+        }
+
+
+
+
+
+       
+
+        
