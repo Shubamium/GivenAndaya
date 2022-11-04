@@ -134,6 +134,14 @@ main{
         animation-direction: reverse;
         pointer-events: none;
     }
+    #section-divider.px .planet{
+        left: 50%;
+        transform-origin: center 55%;
+        translate: -50% -20%;
+        animation: spin 45s linear infinite;
+        animation-direction: reverse;
+        pointer-events: none;
+    }
 
     @keyframes spin {
         from{

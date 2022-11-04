@@ -7,6 +7,9 @@
     max-width: 140px;
     border-radius: 2em;
 }
+main{
+    min-height: 20000px;
+}
 
 #title{
     display: grid;
@@ -93,7 +96,7 @@
 
     #game-nav .games .game .btn{
         font-size: 1.4rem;
-        margin: .2em 0;
+        margin: .4em 0;
         border-radius: .1em;
     }
     
@@ -111,4 +114,21 @@
         display: block;
         top: 0;
         left: 0;
+    }
+
+
+#game-title{
+    background-color: #311D3E;
+    display: flex;
+    flex-direction: column;
+}
+
+    #game-title img{
+        max-height: 140px;
+        object-fit: contain;
+        margin: .4em 0;
+    }
+    #game-title  .paragraph{
+        max-width: 45ch;
+        margin: 0 auto;
     }
