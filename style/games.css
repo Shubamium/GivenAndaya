@@ -14,3 +14,51 @@
     margin: 3em;
     margin-top: 100px;
 }
+    #title img{
+        max-height: 80%;
+    }
+
+
+#second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    margin: -200px 2em;
+}
+    #second .top-const,
+    #second .bottom-const{
+        max-height: 300px;
+    }
+
+    #second .bottom-const{
+        transform: scaleX(-1);
+        align-self: flex-start;
+        margin-left: 3em;
+    }
+
+    #second .paragraph{
+        max-width: 55ch;
+    }
+
+    #second .nyan-cat{
+        position: absolute;
+        /* background-color: gainsboro; */
+        width: 100%;
+        display: flex;
+        margin-left: -750px;
+    }
+
+        #second .nyan-cat img{
+            max-height: 250px;
+            display: block;
+        }
+
+        #second .nyan-cat img:nth-child(2){
+            transform: scaleX(-1);
+            margin-left: 750px;
+        }
+        #second .nyan-cat img:nth-child(1){
+            /* margin-right: 50px; */
+        }
