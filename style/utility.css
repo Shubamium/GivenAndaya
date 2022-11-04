@@ -38,6 +38,9 @@
     color: #EF87CC;
 }
 
+.cr-maple{
+    color: #D7573E;
+}
 
 .td-underline{
     text-decoration: underline;
@@ -157,4 +160,15 @@
 
 .block{
     display: block;
+}
+
+.img-fit{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fit-contain{
+    object-fit: contain;
 }
