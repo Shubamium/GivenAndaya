@@ -11,6 +11,10 @@ main{
     min-height: 20000px;
 }
 
+.paragraph{
+    font-size: var(--fs-450);
+}
+
 #title{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -261,6 +265,7 @@ main{
     margin: 2em 0;
     padding: 2em 0;
 }
+
 #gi-ayaka .contents{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -268,5 +273,25 @@ main{
     margin: 3em auto;
 }
 
-    #gi-ayaka .text-part{
-    }
+#gi-ayaka .image{
+    scale: 1.5;
+}
+
+
+
+#gi-kokomi .main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin: 1em auto;
+}
+
+#gi-kokomi .main-content .text-part{
+    margin: 4em 0;
+}
+
+
+#gi-kokomi .top-text{
+    max-width: 70ch;
+    margin: 1em auto;
+}
