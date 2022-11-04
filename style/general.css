@@ -17,6 +17,9 @@
     height: 100%;
     overflow-x: hidden;
 }
+main{
+    padding-bottom: 200px;
+}
 
 :root{
     /* Fonts */

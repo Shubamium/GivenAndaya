@@ -177,3 +177,7 @@
     top: 0;
     left: 0;
 }
+
+.bg-clear{
+    background-color: transparent !important;
+}

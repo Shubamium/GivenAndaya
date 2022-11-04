@@ -7,9 +7,6 @@
     max-width: 140px;
     border-radius: 2em;
 }
-main{
-    min-height: 20000px;
-}
 
 .paragraph{
     font-size: var(--fs-450);
@@ -134,7 +131,7 @@ main{
         margin: .4em 0;
     }
     #game-title  .paragraph{
-        max-width: 55ch;
+        max-width: 75ch;
         margin: 0 auto;
     }
 
@@ -414,4 +411,25 @@ main{
 #gi-finalword{
     max-width: 60%;
     margin: 0 auto;
+}
+
+
+#bd-char1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em 100px;
+}
+
+    #bd-char1{
+        height:400px;
+    }
+
+
+#bd-score .paragraph{
+    display: block;
+    max-width: 45ch;
+}
+
+#bd-score img{
+    max-width: 100%;
 }
