@@ -123,6 +123,8 @@ main{
         animation: spin 100s linear infinite;
         translate: -50% -50%;
         pointer-events: none;
+        transform-box: fill-box;
+
 
     }
     
@@ -133,7 +135,10 @@ main{
         animation: spin 45s linear infinite;
         animation-direction: reverse;
         pointer-events: none;
+        
+        transform-box: fill-box;
     }
+
     #section-divider.px .planet{
         left: 50%;
         transform-origin: center 55%;

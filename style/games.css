@@ -476,6 +476,8 @@
 
         animation:paimon-sway 9s ease infinite;
         transform-origin: bottom;
+        transform-box: fill-box;
+
     }
 
     @keyframes paimon-sway{
