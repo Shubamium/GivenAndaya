@@ -13,6 +13,7 @@ main{
 
 .paragraph{
     font-size: var(--fs-450);
+    color: #6D4B83;
 }
 
 #title{
@@ -295,3 +296,60 @@ main{
     max-width: 70ch;
     margin: 1em auto;
 }
+
+
+#gi-pulls{
+    margin: 2em 0;
+}
+
+    #gi-pulls .pulls {
+    }
+
+    #gi-pulls  .pull{
+        margin: 3em 0;
+        width: 100%;
+    }
+    #gi-pulls  .pull .paragraph{
+        max-width: 75ch;
+        margin: 0 auto;
+    }
+
+    #gi-pulls .pull-image{
+        height: 200px;
+    }
+    #gi-pulls .pull:nth-child(2) .pull-image .img-fit:first-child{
+        object-position: center 20%;
+    }
+    #gi-pulls .pull:nth-child(3) .pull-image .img-fit:first-child{
+        object-position: center 30%;
+    }
+
+    #gi-pulls .pull-image .name{
+        bottom:4px;
+        right: 4px;
+        width: 120px;
+        height: auto;
+    }
+    #gi-pulls .pull .after-text{
+        max-width: 60ch;
+        margin:  2em auto;
+    }
+    #gi-pulls .pull-image .name.left{
+        bottom:4px;
+        left: 4px;
+        width: 120px;
+        height: auto;
+    }
+
+    #gi-pulls .fail-pull{
+        display: grid;
+        grid-template-columns: 1fr 60%;
+        background-color: #140d1aa9;
+    }
+
+    #gi-pulls .fail-pull .heading-empha{
+        font-size: 3rem;
+    }
+    #gi-pulls .fail-pull .text-part{
+        margin: 2em 0;
+    }
