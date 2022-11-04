@@ -200,16 +200,28 @@ main{
     #text-bleed .text-part{
         padding: 4em;
     }
-#text-bleed .image{
-    position: relative;
+            #text-bleed .image{
+                position: relative;
+            }
+
+            #text-bleed .image img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: contain;
+                top: 0%;
+                left: 0%;
+                scale: 1.4;
+            }
+
+#crk-image{
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 80%;
 }
 
-#text-bleed .image img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: contain;
-    top: 0%;
-    left: 0%;
-    scale: 1.4;
+#crk-image img{
+    max-height: 300px;
+    margin: 0 0 0 auto;
+    display: block;
 }
