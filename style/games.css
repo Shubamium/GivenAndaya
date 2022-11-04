@@ -353,3 +353,24 @@ main{
     #gi-pulls .fail-pull .text-part{
         margin: 2em 0;
     }
+
+#gi-extra-pulls{
+    margin: 200px 0;
+}
+#gi-extra-pulls .image{
+    height: 140px;
+    background-color: #140D1A;
+    margin: 4em 0;
+
+}
+
+#gi-extra-pulls .image img{
+    scale: 1.7;
+}
+
+#gi-extra-pulls .image-2 {
+    height: 250px;
+    max-width: 70%;
+    outline: 2px solid white;
+    margin: 1em auto;
+}
