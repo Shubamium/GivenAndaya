@@ -107,8 +107,8 @@ main{
         position: absolute;
         /* top: 0%; */
         /* left: 50%;    */
-        left: 370px;
-        /* transform: translate(-50%,-50%); */
+        /* left: 370px; */
+        /* transform: translateX(100%); */
         display: block;
         top: -5em;
     }
@@ -122,12 +122,17 @@ main{
         transform-origin:  50% 52%;
         animation: spin 100s linear infinite;
         translate: -50% -50%;
+        pointer-events: none;
+
     }
     
     #section-divider .planet{
+        left: 50%;
         transform-origin: center 60%;
-        animation: spin 45s linear infinite ;
+        translate: -50%;
+        animation: spin 45s linear infinite;
         animation-direction: reverse;
+        pointer-events: none;
     }
 
     @keyframes spin {

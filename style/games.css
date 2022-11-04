@@ -62,3 +62,53 @@
         #second .nyan-cat img:nth-child(1){
             /* margin-right: 50px; */
         }
+
+
+#game-nav{
+    margin-top: 150px;
+    padding: 3em;
+}
+
+    #game-nav .games{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    #game-nav .games .game{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: #4414463b; */
+        /* padding:.1em; */
+    }
+    #game-nav .games .game .game-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+    }
+
+    #game-nav .games .game .btn{
+        font-size: 1.4rem;
+        margin: .2em 0;
+        border-radius: .1em;
+    }
+    
+    #game-nav .games .game .image{
+        border-radius: 1em;
+        height: 280px;
+        aspect-ratio: 1 / 1;
+        background-color: var(--purple);
+        position: relative;
+    }
+    #game-nav .games .game img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+    }
