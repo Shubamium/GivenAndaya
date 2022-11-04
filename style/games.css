@@ -398,3 +398,14 @@ main{
     #next-banner .banner .text-part{
         margin: 150px 0;
     }
+
+#hutao-trans .text-part{
+    margin: 4em 2em;
+    /* background-color: rebeccapurple; */
+    padding: 4em 0;
+}
+
+    #hutao-trans .text-part .paragraph{
+        max-width: 80%;
+        margin: 150px auto;
+    }

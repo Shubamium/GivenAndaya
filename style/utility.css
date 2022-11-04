@@ -172,3 +172,8 @@
 .fit-contain{
     object-fit: contain;
 }
+
+.fit-pos{
+    top: 0;
+    left: 0;
+}
