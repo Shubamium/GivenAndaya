@@ -374,3 +374,27 @@ main{
     outline: 2px solid white;
     margin: 1em auto;
 }
+
+
+#next-banner{
+    margin: 1em 0;
+}
+
+    #next-banner .top-text{
+        background-color: #34253e8a;
+    }
+
+    #next-banner .top-text .paragraph{
+        max-width: 60ch;
+        margin: 0 auto;
+    }
+
+    #next-banner .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:0 2em;
+        gap: 2em;
+    }
+    #next-banner .banner .text-part{
+        margin: 150px 0;
+    }
