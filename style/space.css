@@ -231,6 +231,20 @@ main{
         opacity: .5;
         transform: scale(.8);
     }
+    .decor .px1{
+        top: 1350px;
+        left: calc(50% + 300px);
+        rotate: -85deg;
+        opacity: .3;
+        transform: scale(.8);
+    }
+    .decor .px2{
+        top: 135px;
+        left: calc(50% - 900px);
+        rotate: -85deg;
+        opacity: .2;
+        transform: scale(.8) translate(-50%);
+    }
 
     @keyframes blink {
         from{
