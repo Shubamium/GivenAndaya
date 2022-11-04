@@ -129,7 +129,7 @@ main{
         margin: .4em 0;
     }
     #game-title  .paragraph{
-        max-width: 45ch;
+        max-width: 55ch;
         margin: 0 auto;
     }
 
@@ -150,6 +150,10 @@ main{
         gap: 2em;
         max-width: 70%;
         margin:  0 auto;
+    }
+
+    #game-gallery .gallery.right{
+        grid-template-columns: 3fr 2fr;
     }
 
     #game-gallery .gallery .gallery-item{
