@@ -42,6 +42,18 @@
     color: #D7573E;
 }
 
+.cr-hydro{
+    color: #2665AE;
+}
+
+.cr-electro{
+    color: #B611C3;
+}
+
+.cr-dendro{
+    color: #60834B;
+}
+
 .td-underline{
     text-decoration: underline;
 }
