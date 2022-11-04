@@ -466,3 +466,31 @@
         z-index: 2;
         scale: .85;
     }
+
+    
+    .gallery-decor .gi-r{
+        top: -200px;
+        right: -280px;
+        z-index: 2;
+        scale: .8;
+
+        animation:paimon-sway 9s ease infinite;
+        transform-origin: bottom;
+    }
+
+    @keyframes paimon-sway{
+        0%{
+            rotate: -8deg;
+            filter: drop-shadow(4px 4px 5px  rgba(255, 255, 255, 0.192));
+        }
+        50%{
+            rotate: 8deg;
+            filter: drop-shadow(0px 20px 15px rgba(163, 171, 255, 0.349));
+
+        }
+        100%{
+            rotate: -8deg;
+            filter: drop-shadow(4px 4px 5px  rgba(255, 255, 255, 0.226));
+
+        }
+    }
