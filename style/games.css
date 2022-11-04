@@ -433,3 +433,21 @@
 #bd-score img{
     max-width: 100%;
 }
+
+
+.gallery-decor > *{
+    position: absolute;
+    pointer-events: none;
+}
+
+    .gallery-decor .bd-r{
+        top: 0;
+        right: -200px;
+        z-index: 2;
+    }
+    .gallery-decor .bd-l{
+        top: 0;
+        left: -80px;
+        z-index: 2;
+        rotate: -15deg;
+    }
