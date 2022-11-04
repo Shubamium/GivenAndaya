@@ -194,7 +194,7 @@ main{
 
 #text-bleed{
     background-color: #140D1A;
-    margin: 2em 0;
+    margin: 150px 0;
 }
 
     #text-bleed .text-part{
@@ -224,4 +224,9 @@ main{
     max-height: 300px;
     margin: 0 0 0 auto;
     display: block;
+}
+
+#crk-extra{
+    max-width: 65ch;
+    margin: 6em auto;
 }
