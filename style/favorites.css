@@ -47,21 +47,35 @@
 
 
      
+     #all-time .show-info .info:not(.hidden) {
+         width: min(800px, 80vw);
+         aspect-ratio: 5/3;
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         translate: -50% -50%;
+         z-index: 5000;
+         background-color: #34253E;
+         opacity: 1;
+         backdrop-filter: blur(200px);
+         border-radius: 1em;
+         font-weight: bold;
 
-     #all-time .show-info .info{
-        width: min(800px, 80vw );
-        aspect-ratio: 5/3;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 5000;
-        background-color: #34253E;
-        opacity: .98;
-        backdrop-filter: blur(200px);
-        border-radius: 1em;
-        font-weight: bold;
+        animation:  scale-up .25s cubic-bezier(.17,.67,.86,1.4) forwards;
+        transform-origin: center;
      }
+
+            
+      @keyframes scale-up {
+         from{
+            transform: scale(0);
+         }
+         to{
+            transform: scale(1);
+         }
+      }
+
+     
 
      #all-time .info{
         padding: 3em;
