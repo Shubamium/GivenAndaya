@@ -160,3 +160,29 @@ main{
    #best .best-page .page-content .image img{
       width: 400px;
    }
+
+
+#read-list{
+   margin: 2em;
+   margin-top: 500px;
+   padding: 2em;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+   #read-list .list{
+      overflow-x: hidden;
+      max-height: 300px;
+      background-color: var(--darkPurple);
+      opacity: .8;
+      border-radius: 1em;
+   }
+   
+   #read-list .listing{
+      color: white;
+      font-family: var(--mainFont);
+   }
+
+   #read-list .listing:nth-col(odd){
+      color: red;
+   }
