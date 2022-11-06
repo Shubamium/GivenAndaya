@@ -16,33 +16,41 @@ function selectInit(selection){
     // Assign the function to the controls buttons
     for(let i = 0; i < allControls.length; i++){
         allControls[i].addEventListener("click", ()=>
-            switchPage(selection, allControls[i].dataset.selectOpen)
+            switchPage(selection, allControls[i].dataset.selectOpen,allControls)
         );
+    //    console.log("inite");
     }
 
     // Assign the function to the back button
-    backButton.addEventListener("click",( )=> switchPage(selection) );
+    if(backButton != null)backButton.addEventListener("click",( )=> switchPage(selection) );
 
 }
 
-function switchPage(container, page){
+function switchPage(container, page, controls){
 
-    switchView(container)
+    // If the container doesn't have nohide class then both view and items stays visible
+    if(!container.classList.contains("nohide")) switchView(container);
+
     // Get all select item
     let allItems = container.querySelectorAll(".select-item[data-select]");
     
     // Disable all page
     for(let i = 0; i < allItems.length;i++){
+        
         allItems[i].classList.add("hidden");
-
         // Enable page with dataset of {page}
-
         if(allItems[i].dataset.select == page){
             console.log(page);
 
            allItems[i].classList.remove("hidden");
         }
+
+        controls[i].classList.remove("selected");
+        if(controls[i].dataset.selectOpen == page) controls[i].classList.add("selected");
     }
+
+
+
 
 }
 

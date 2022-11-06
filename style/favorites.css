@@ -1,3 +1,6 @@
+main{
+   min-height: 20000px;
+}
 #all-time{
     margin: 4em 3.2em;
 }
@@ -113,3 +116,47 @@
                border-radius: 2vmin;
             }
 
+
+
+#best{
+   /* background-color: red; */
+}
+
+   #best .best-nav{
+      display: flex;
+      justify-content: space-around;
+      max-width: 60%;
+      margin: 25px auto;
+      background-color: #2C2730;
+      border-radius: 2em;
+
+   }
+
+   #best .best-nav .btn{
+      color: white;
+      padding: .5em 3em;
+   }
+
+   #best .best-nav .btn.selected{
+      background-color: var(--saturatePurple);
+   }
+
+   #best .best-page{
+      padding: 2em;
+      height: 500px;
+   }
+
+   #best .best-page .page-content{
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      justify-content: start;
+      height: 100%;
+      gap: 2em;
+      margin: 1.4em 0;
+   }
+   #best .best-page .page-content .image{
+      aspect-ratio: 3/4;
+   }
+   #best .best-page .page-content .image img{
+      width: 400px;
+   }

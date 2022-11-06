@@ -3,10 +3,6 @@
     color: var(--blue);
 }
 
-.small-hr{
-    max-width: 140px;
-    border-radius: 2em;
-}
 
 .paragraph{
     font-size: var(--fs-450);

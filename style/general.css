@@ -240,3 +240,8 @@ hr{
     border: 2px solid white;
     margin: 1em 0;
 }
+
+.small-hr{
+    max-width: 140px;
+    border-radius: 2em;
+}
