@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!-- Metadata -->
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Home | Given Mikaela Andaya</title>
+   
+       <!-- CSS -->
+       <link rel="stylesheet" href="style/general.css">
+       <link rel="stylesheet" href="style/utility.css">
+       <link rel="stylesheet" href="style/space.css">      
+       <link rel="stylesheet" href="style/favorites.css"> 
+       
+         <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+       <!-- <link rel="stylesheet" href="style/about.css">       -->
+         
+       <!-- Font Awesome -->
+       <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+      <!-- header -->
+      <header>
+        <!-- Navigation -->
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html"> <i class="fa-solid fa-user"></i> About <i class="fa-solid fa-caret-down"></i></a>
+                    <!-- Sub Nav -->
+                    <div class="sub-nav">
+                        <a href="favorites.html"> <i class="fa-solid fa-star"></i> Favorites</a>
+                        <a href="likes.html"> <i class="fa-solid fa-thumbs-up"></i></i> Likes & Dislikes</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="hobbies.html"><i class="fa-solid fa-palette"></i> Hobbies <i class="fa-solid fa-caret-down"></i> </a>
+
+                    <!-- Sub Nav -->
+                    <div class="sub-nav">
+                        <a href="hobbies.html"> <i class="fa-solid fa-paintbrush"></i> Art</a>
+                        <a href="games.html"> <i class="fa-solid fa-gamepad"></i> Games</a>
+                        <a href="favorites.html"> <i class="fa-solid fa-film"></i> Media</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+                </li>
+
+                <li>
+                    <a href="contacts.html"><i class="fa-solid fa-address-book"></i> Contacts</a>
+                </li>
+            </ul>
+
+            <div class="line"></div>
+            <div class="action">
+                <button class="btn btn-cta ft-primary"> <i class="fa-solid fa-pen"></i> Write me a message!</button>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </nav>
+
+      </header>
+
+      <div class="planet">
+          <img src="media/image/graphic/header.png" class="planet-header">
+          <h1 class="planet-title">ABOUT</h1>
+          <h1 class="planet-title">ABOUT</h1>
+          <h1 class="planet-title">ABOUT</h1>
+      </div>
+
+      <div class="decor">
+        <img src="media/image/decor/saturn.png"  class="saturn-top">
+        <img src="media/image/decor/saturn.png"  class="saturn-next">
+        <img src="media/image/decor/bluegiants.png"  class="giants-one">
+        <img src="media/image/decor/bluegiants.png"  class="giants-two">
+        <img src="media/image/decor/catstronauts.png"  class="catstronauts">
+        <img src="media/image/decor/curved-arrows.png" class="arrow-top-l">
+        <img src="media/image/decor/star-sparkle-l.png" class="stars-top-l">
+        <img src="media/image/decor/curved-arrows.png" class="arrow-top-r">
+        <img src="media/image/decor/star-sparkle-r.png" class="stars-top-r">
+      </div>
+      <main>
+        <div class="decor">
+            <img src="media/image/decor/tape.png" class="l-tape">
+            <img src="media/image/decor/tape.png" class="r-tape">
+            <!-- <img src="media/image/decor/const1.png" class="const"> -->
+        </div>
+        
+        <!-- Favorite List Section-->
+        <section id="all-time">
+            <h2 class="heading">Favorites</h2>
+            <p class="paragraph">Here r my few favorite shows and comics listed in one! <br>Click for more details! </p>
+           
+            <div class="fav-list">
+                <div class="show-info" data-show-main="alltime">
+                    <div class="info hidden" data-show="spyfam">
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/anya.jpg" alt="spyxfamily cover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">Spy X Family</h2>
+                                <p class="paragraph light">
+                                    Its about a family that got formed through their own personal missions A spy that has a mission to get close to an enemy’s son through having a kid</p>
+                                <p class="paragraph light">
+                                    The said kid, who has telepathic abilities who is set on completing that mission to avoid getting thrown in the orphanage again An assassin, who only married the spy so she’d hav a date to an event for she worried that ppl might think she was an assassin (somehow)
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info hidden" data-show="throne" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/your-throne.JPG" alt="your throne cover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">Your Throne</h2>
+                                <p class="paragraph light">
+                                    aka your throne from webtoon but u can search that title on illegal sites to read ahead) 
+                                    - this one is well known for a reason for a very valid reason, its not the basic plotline, the mc is a badass and not to mention even the other one yk uhh blondie (i forgot her name sorry) she’s also very cool, and the characters r so so well made and the artstyle is just URHG </p>
+                                <p class="paragraph light">
+                                    and <span class="bold">MY GHOD IS THE PLOTLINE SO GOOD  URHGHHHH THE HISTORICAL SETTING, THE ANNOYING PRINCE ITS JUST RUGHHHH so good
+                                    </span>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info hidden" data-show="asobi" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/asobi.png" alt="asobi asobasecover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">Asobi Asobase</h2>
+                                <p class="paragraph light">
+                                    its just about three girls who make their own lil club just doing lil games and doing ridiculous things</p>
+                                    <p class="paragraph light">its just about three girls who make their own lil club just doing lil games and doing ridiculous things</p>
+
+                                <p class=" paragraph light"><span class="bold">HAHAHAHHHHAHA NOW THIS IS MY KIND OF HUMOR ALRIGHT </span>i thought it was jjst gonna be a slice of life simple anime but NO NOO NOOO wjwiwjwkwnksns its just hilarious i still laugh just remembering the scenes</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info hidden" data-show="brother" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/touch-brother.jpg" alt="your throne cover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">If You Touch My Brother, You’re All Dead </h2>
+                                <p class="paragraph light">
+                                    hmmm okay this one, there’s recently been some good time loop manwhas coming but this one’s different from them, its comedy and it shadows the part where the mc is going insane cuz of the time loop, its rlly sad if u think bout it for a sec but u’ll kind of forget bout that cuz of how funny it is jahsjjhdnjnna it has a bunch of meme scenes, its kind of like beware of the villainess but more comedy, i dont think there’s even one serious scene except for like the first chapter</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info hidden" data-show="asinclass" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/assclass.jpg" alt="assasination classroom cover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">Assasination Classroom</h2>
+                                <p class="paragraph light">
+                                    It used to be my fav until tanya, tanya was just good from the start it didnt need a build up, it just got 5x better each ep</p>
+
+                                    <p class="paragraph light">
+                                        Its about a classroom that gets chosen to train themselves to assassinate a squid thats threatening to end the world, and also their teacher
+                                    </p>
+                                    <p class="paragraph light">I like how cool and nice nagisa is and the story of the tchr </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info hidden" data-show="lady" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/ladybeast.jpg" alt="The Lady and the Beast cover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">The Lady and the Beast</h2>
+                                <p class="paragraph light">
+                                    aka your throne from webtoon but u can search that title on illegal sites to read ahead) 
+                                    - this one is well known for a reason for a very valid reason, its not the basic plotline, the mc is a badass and not to mention even the other one yk uhh blondie (i forgot her name sorry) she’s also very cool, and the characters r so so well made and the artstyle is just URHG </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info hidden" data-show="iruma" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/irum.jpg" alt="iruma cover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">Welcome to Demon School! Iruma-kun </h2>
+                                <p class="paragraph light">
+                                    These r just ur basic wholesome comedy series, but i rlly like it, i just hav a thing for rlly nice kyot characters and badass characters it cant be in between
+                                    It just makes me feel comfy like in other shows like this, i also recommend sleeping princess of the demon castle too if u’ll like this</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info hidden" data-show="bride" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/bride.png" alt="bride cover image" class="img-fit fit-contain">
+                            </div>
+                            <article class="text-part">
+                                <h2 class="heading-small">The Bride of A Monster</h2>
+                                <p class="paragraph light">
+                                    URGH I LOVE THIS COMEDY ONE it doesnt rlly hav much drama but there’s still some issues with the mc but like just parent problems but yeah its about like these monsters thatre disguised as humans and they all get married to this one girl with super human strenght for some reason, maybe she’s half human half monster idk i ahvent caught up to reading it in a while (Ｔ＿Ｔ) </p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="info hidden" data-show="saiki" >
+                        <button class="btn btn-back" onclick="switchClass(this.parentElement,'hidden');"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="info-content" >
+                            <div class="image relative">
+                                <img src="media/image/graphic/saiki.png" alt="saiki cover image" class="img-fit fit-contain">
+                            </div>
+
+                            <article class="text-part">
+                                <h2 class="heading-small">The Disastrous Life of Saiki K.</h2>
+                                <p class="paragraph light">Its about a person that has all the psychic powers u could ever think of, yet he wants to live an ordinary life. But unfortunately (fortunately) for him, he attracts all kinds of weird ppl, even tho he looks like he hates them, at the end of the day he still saves the world for them
+                                    Im actually not rlly in this kind of comedy ajshsjwhwj its just i like it also cuz of the comfiness it makes me feel when i watch it</p>
+                            </article>
+                        </div>
+                    </div>
+                 
+                   
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper shows">
+                    <div class="list-container swiper-wrapper">
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="throne">
+                            <img src="media/image/graphic/your-throne.JPG" alt="shows" class="img-fit">
+                        </div>
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="asinclass">
+                            <img src="media/image/graphic/assclass.jpg" alt="shows" class="img-fit">
+                        </div>
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="lady">
+                            <img src="media/image/graphic/ladybeast.jpg" alt="shows" class="img-fit">
+                        </div>
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="iruma">
+                            <img src="media/image/graphic/irum.jpg" alt="shows" class="img-fit">
+                        </div>
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="brother">
+                            <img src="media/image/graphic/touch-brother.jpg" alt="shows" class="img-fit">
+                        </div>
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="asobi">
+                            <img src="media/image/graphic/asobi.png" alt="shows" class="img-fit">
+                        </div>
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="bride">
+                            <img src="media/image/graphic/bride.png" alt="shows" class="img-fit">
+                        </div>
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="spyfam">
+                            <img src="media/image/graphic/anya.jpg" alt="shows" class="img-fit">
+                        </div>  
+                        <div class="list-item swiper-slide relative" onclick="show(this,true); event.stopPropagation();" data-show-id="alltime" data-show="saiki">
+                            <img src="media/image/graphic/saiki.png" alt="shows" class="img-fit">
+                        </div>
+                    
+              
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div> 
+
+            </div>
+        </section>
+
+       
+            
+      </main>
+
+          <!-- Footer -->
+          <footer>
+            <h2 class="ft-alt web-name">Given Mikalea Andaya</h2>
+            <p class="ft-primary maker ">Website Design By <span class="name cr-blue">Vincent Auriol Liussyaputra</span> 🞄 Shubamium</p>
+        </footer>
+
+        
+    <script src="script/classSwitcher.js"></script>
+    <script src="script/show.js"></script>
+
+    <script>
+        let infos = document.getElementsByClassName("info");
+
+        for(info of infos){
+            hideOnBlur(info);
+        }
+
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".shows", {
+        effect:'coverflow',
+        slidesPerView: '5',
+        spaceBetween: 10,
+        direction:'horizontal',
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        loop:true,
+        centeredSlides: true,
+        slideToClickedSlide: true,
+        centerInsufficientSlides: false,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 50,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+         roundLengths: true,
+         loopAdditionalSlides: 30
+      });
+      
+        // var mySwiper = new Swiper(".shows", {
+        //     spaceBetween: 1,
+        //     slidesPerView: 3,
+        //     centeredSlides: true,
+        //     roundLengths: true,
+        //     loop: true,
+        //     loopAdditionalSlides: 30,
+        //     navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev"
+        //     }
+        // });
+
+
+      swiper.slideTo(4, false,false);
+    </script>
+</body>
+</html>

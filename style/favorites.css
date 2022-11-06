@@ -1,0 +1,101 @@
+#all-time{
+    margin: 4em 3.2em;
+}
+
+#all-time .list-container{
+    /* width: 100%; */
+    /* background-color: red; */
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1.1em;
+    padding: 1em 1em;
+    white-space: nowrap;
+  
+    margin: 4em 0 ;
+}
+
+    #all-time .list-container .list-item{
+       background-color: var(--darkerPurple);
+       border-radius: .51em;
+       aspect-ratio: 2/3;
+       height: 100%;
+       transition: all 250ms ease;
+       overflow: hidden;
+       filter: brightness(50%);
+       cursor: pointer;
+    }
+
+    #all-time .list-container .list-item img{
+        -khtml-user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+     }
+
+    #all-time .list-container .list-item:hover{
+        transition: all 550ms ease;
+        /* transform: scale(2, 1.1); */
+        box-shadow: 2px 2px 2px black;
+        outline: 2px solid purple;
+        z-index: 50;
+        scale: 1.05;
+        filter: brightness(100%);
+
+     }
+
+
+     
+
+     #all-time .show-info .info{
+        width: min(800px, 80vw );
+        aspect-ratio: 5/3;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 5000;
+        background-color: #34253E;
+        opacity: .98;
+        backdrop-filter: blur(200px);
+        border-radius: 1em;
+        font-weight: bold;
+     }
+
+     #all-time .info{
+        padding: 3em;
+     }
+
+     #all-time .info .btn{
+        background-color: var(--lightPurple);
+        font-size: 1.5rem;
+        color: var(--darkPurple);
+     }
+     
+     
+     #all-time .info .info-content{
+        display: flex;
+        gap: 2em;
+        height: 100%;
+        padding: 1em;
+     }
+
+    
+            #all-time .info .info-content .paragraph{
+               font-size: var(--fs-400);
+            }
+
+               #all-time .info .info-content .heading-small{
+                  font-size: min(2rem,25vw);
+               }
+
+            #all-time .info .info-content .image{
+               height: 100%;
+               aspect-ratio: 3/4.2;
+            }
+            #all-time .info .info-content .image img{
+               /* background-color: green; */
+               border-radius: 2vmin;
+            }
+
