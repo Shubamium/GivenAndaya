@@ -154,6 +154,9 @@ main{
       gap: 2em;
       margin: 1.4em 0;
    }
+   #best .best-page .page-content .paragraph{
+      font-size: 100%;
+   }
    #best .best-page .page-content .image{
       aspect-ratio: 3/4;
    }
@@ -167,13 +170,24 @@ main{
    margin-top: 500px;
    padding: 2em;
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 300px 300px;
+   gap: 1em;
+   padding-right: 0;
 }
-
    #read-list .list{
+      width: 100%;
+   }
+
+   @media screen and (max-width:800px){
+      #read-list{
+         display: flex;
+         flex-wrap: wrap;
+      }
+   }
+   #read-list .listing{
       overflow-x: hidden;
       max-height: 300px;
-      background-color: var(--darkPurple);
+      background-color: rebeccapurple;
       opacity: .8;
       border-radius: 1em;
    }
@@ -181,8 +195,133 @@ main{
    #read-list .listing{
       color: white;
       font-family: var(--mainFont);
+      font-size: .8rem;
+   }
+   
+   #read-list .list .heading-small{
+      margin: .4em 0;
+      background-color: rgb(142, 84, 199);
+      padding: .5em .9em;
+      border-radius: 1em 0 0 1em;
+      text-align: right;
+      font-size: var(--fs-500);
    }
 
-   #read-list .listing:nth-col(odd){
-      color: red;
+   #read-list .list:nth-child(2) .heading-small{
+      background-color: rgb(89, 89, 251);
    }
+   #read-list .list:nth-child(3) .heading-small{
+      background-color: rgb(251, 89, 94);
+   }
+
+
+
+#spotify{
+   padding: 2em;
+}
+
+
+   #spotify .playlist{
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 1em;
+      height: 420px;
+      padding: 1em;
+   }
+
+      #spotify .playlist .track-list{
+         background-color: #311D3E;
+         box-shadow: 0px -1px 14px -1px rgba(0, 0, 0, 0.25);
+
+      }
+
+      #spotify .playlist .player, #spotify .playlist .track{
+         background-color: #34253E;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 1em 0;
+         gap: .4em;
+         box-shadow: 0px -1px 14px -1px rgba(0, 0, 0, 0.25);
+
+      }
+      #spotify .playlist .track .audiop .fa-play,
+      #spotify .playlist .player .audiop .fa-play{
+         text-indent: 4px;
+      }
+      #spotify .playlist .player .audiop .fa-pause{
+         text-indent: -2px;
+         display: none;
+      }
+      
+      #spotify .playlist .track .image,
+         #spotify .playlist .player .image{
+         width: 200px;
+         aspect-ratio: 1/1;
+         margin-bottom: .2em;
+         box-shadow: 0px -1px 14px -1px rgba(0, 0, 0, 0.25);
+      }
+
+      #spotify .playlist .track .heading-small,
+         #spotify .playlist .player .heading-small{
+         font-size: 1.4rem;
+      }
+      #spotify .playlist .track .paragraph,
+         #spotify .playlist .player .paragraph{
+         padding: 0;
+         font-size: .9rem;
+         
+      }
+
+      #spotify .playlist .track .audiop,
+         #spotify .playlist .player .audiop{
+         aspect-ratio: 1/1;
+         width: 25px;
+         color: #34253E;
+         background-color: #D7B7FF;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 2rem;
+         text-indent: 4px;
+         scale: .8;
+      }
+      
+      #spotify .playlist .player .audiop.played .fa-play{
+         display: none;
+      }
+      #spotify .playlist .player .audiop.played .fa-pause{
+         display: block;
+      }
+
+
+      #spotify .track-list{
+         display: flex;
+         padding: 1em;
+         margin: .3em;
+         border-radius: 1em;
+         overflow-x: auto;
+         gap: 1em;
+      }
+
+      #spotify .playlist .track{
+         border-radius: 1em;
+         padding-top: 0;
+         background-color: #463153;
+      }
+
+      #spotify .playlist .track .heading-small{
+         white-space: nowrap;
+      }
+      #spotify .playlist .track .heading-small,
+      #spotify .playlist .track .paragraph{
+         text-align: left;
+         width: 80%;
+      }
+
+         #spotify .track-list .track .image{
+            scale: .9;
+            border-radius: .5em;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+         }
