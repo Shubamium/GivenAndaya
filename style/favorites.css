@@ -325,3 +325,37 @@ main{
             overflow: hidden;
             aspect-ratio: 1/1;
          }
+
+
+.music-fav{
+   padding: 3em;
+   margin-top: 100px;
+}
+
+   .music-fav .paragraph{
+      font-size: 1.3rem;
+   }
+
+   .music-fav .main-heading{
+      text-align: center;
+      font-size: 4rem;
+      margin: 0;
+      padding: 0;
+      line-height: 80%;
+      color: #DF2020;
+   }
+   .music-fav .blue{
+      color: #61D0FF;
+   }
+
+   .music-fav .main-image{
+      min-height: 380px;
+   }
+
+      .music-fav .main-image .artist-name{
+         position:absolute;
+         z-index: 100;
+         left: 0;
+         bottom: 0;
+         scale: .85;
+      }
