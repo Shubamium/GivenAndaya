@@ -1,0 +1,45 @@
+
+body{
+    overflow: hidden;
+}
+main{
+    padding-bottom: 0;
+    background: url(../media/image/background/flower.jpg);
+}
+
+nav{
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+}
+
+
+
+#book{
+    background-color: grey;
+    overflow: hidden;
+    perspective: 1000px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#book .page{
+    background-color: white;
+    /* width: 100vw; */
+    box-shadow: inset 1em 1em 50px rgba(149, 108, 161, 0.192);
+    background-image: url('../media/image/background/note.png');
+    background-size: 120vmin 120vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#book .cover{
+    width: 100vw;
+    background-color: rgb(167, 76, 252);
+    box-shadow: inset 1em 1em 50px rgba(62, 32, 71, 0.226);
+
+}

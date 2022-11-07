@@ -10,11 +10,16 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/utility.css">
-    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/gallery.css">
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
 
+    <!-- Library -->
+    <!-- Jquery -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- Turn Js -->
+    <script src="library/turnjs/turn.min.js"></script>
 </head>
 <body>
    <div class="container">
@@ -66,7 +71,20 @@
         </header>
 
         <main>
-            
+            <div id="zoom-viewport">
+                    <section id="book">
+                        <div class="cover"><h1>Venmi Gallery</h1></div>
+                        <div class="page"><p class="paragraph">page1</p></div>
+                        <div class="page"><p class="paragraph">page2</p></div>
+                        <div class="page"><p class="paragraph">page3</p></div>
+                        <div class="page"><p class="paragraph">page3</p></div>
+                        <div class="page"><p class="paragraph">page3</p></div>
+                        <div class="page"><p class="paragraph">page3</p></div>
+                        <div class="page"><p class="paragraph">page3</p></div>
+                        <div class="cover"><h1>Back Side</h1></div>
+
+                    </section>
+            </div>
         </main>
 
         <!-- Footer -->
@@ -76,6 +94,34 @@
         </footer>
     </div>
 
+    <!-- TurnJS Init -->
+    <script>
 
+        $(document).ready(function () {
+        //your code here
+                $('#book').turn({acceleration: true,
+                    gradients: true, 
+                    acceleration: true,
+                    elevations:1000
+                });
+
+                $(window).resize(()=>{
+
+                    // $('#book').width(window.innerWidth);
+                    // $('#book').height(window.innerHeight);
+                    // $("#flipbook").turn("resize");
+                }
+                    
+                );
+            
+
+              
+        });
+
+        
+
+      
+                  
+    </script>
 </body>
 </html>
