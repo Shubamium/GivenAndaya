@@ -326,6 +326,12 @@ main{
             aspect-ratio: 1/1;
          }
 
+   #spotify .idle{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin: 100px 0;
+   }
 
 .music-fav{
    padding: 3em;
