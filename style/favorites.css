@@ -405,3 +405,43 @@ main{
 #sefim .best-song {
    gap: 2em;
 }
+
+
+   #sefim .debut{
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      height: 500px;
+      align-items: center;
+   }
+
+   #sefim .debut .image{
+      /* background-color: green; */
+   }
+
+   #sefim .debut .image img{
+      width: 700px;
+   }
+
+   #sefim .debut .text-part .paragraph{
+      background-color: #34253E;
+      padding:1.2em;
+   }
+
+   #sefim .garam{
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      padding: 1em;
+      max-width: 85%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #sefim .garam .image{
+      height: 500px;
+   }
+
+   #sefim .garam .paragraph{
+      background-color: #34253E;
+      padding:1.2em;
+   }
