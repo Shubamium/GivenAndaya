@@ -372,7 +372,7 @@ main{
       min-height: 320px;
    }
 
-   #revel .best-song{
+   .music-fav .best-song{
       display: grid;
       grid-template-columns: 1fr 1fr;
       max-width: 70%;
@@ -380,7 +380,7 @@ main{
       gap: -2em;
    }
 
-   #revel .best-song .image{
+   .music-fav .best-song .image{
       height: 300px;
       aspect-ratio: 1/1;
    }
@@ -400,3 +400,8 @@ main{
       max-width: 65ch;
       margin: 0 auto;
    }
+
+
+#sefim .best-song {
+   gap: 2em;
+}
