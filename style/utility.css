@@ -138,6 +138,9 @@
     z-index: -20;
     /* background-color: green; */
 }
+.no-pointer{
+    pointer-events: none;
+}
 
 @media screen and (min-width:1800px) {
     .wave-start{

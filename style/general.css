@@ -67,6 +67,8 @@ nav{
     height: max(45px,3vh);
     
     padding: 0 .5em;
+    pointer-events: visible;
+
 
 }
 

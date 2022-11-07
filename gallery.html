@@ -68,7 +68,7 @@
                 <div class="line"></div>
                 <div class="action">
                     <button class="btn btn-cta ft-primary"> <i class="fa-solid fa-pen"></i> Write me a message!</button>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star no-pointer"></i>
                 </div>
             </nav>
 
@@ -89,6 +89,11 @@
 
                     </section>
             </div>
+
+            <div class="controls">
+                <button class="btn" id="prevbutton"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="btn" id="nextbutton"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
         </main>
 
         <!-- Footer -->
@@ -106,7 +111,8 @@
                 $('#book').turn({acceleration: true,
                     gradients: true, 
                     acceleration: true,
-                    elevations:1000
+                    elevations:100,
+                    autoCenter:true
                 });
 
                 $(window).resize(()=>{
@@ -114,9 +120,17 @@
                     // $('#book').width(window.innerWidth);
                     // $('#book').height(window.innerHeight);
                     // $("#flipbook").turn("resize");
+                    location.reload(); 
                 }
                     
-                );
+                );  
+
+                $('#prevbutton').click(()=>{
+                    $('#book').turn("previous");
+                })
+                $('#nextbutton').click(()=>{
+                    $('#book').turn("next");
+                })
             
 
               

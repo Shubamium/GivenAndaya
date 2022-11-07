@@ -16,12 +16,16 @@ nav{
 
 
 #book{
-    background-color: grey;
+
     overflow: hidden;
     perspective: 1000px;
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
+
+    background: url('../media/image/background/plaid-2.png'), rgba(66, 17, 114, 0.555);
+
+    background-blend-mode: multiply;
 }
 
 
@@ -41,5 +45,34 @@ nav{
     width: 100vw;
     background-color: rgb(167, 76, 252);
     box-shadow: inset 1em 1em 50px rgba(62, 32, 71, 0.226);
-
+    
 }
+
+.controls{
+    /* background-color: red; */
+    position:fixed;
+    height: 0;
+    display: block;
+    width: 100vw;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+    .controls .btn{
+        background-color: rgba(88, 0, 139, 0.425);
+        width: 3vw;
+        height: 30vh;
+        color: white;
+        font-family: var(--mainFont);
+        opacity: .1;
+        font-size: 2.5vw;
+        padding: initial;
+    }
+    .controls .btn:hover{
+        opacity: 1;
+        transition: all 250ms ease;
+    }
