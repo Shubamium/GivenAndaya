@@ -142,6 +142,7 @@
     pointer-events: none;
 }
 
+
 @media screen and (min-width:1800px) {
     .wave-start{
         transform: scaleY(.2) translateY(200%);
