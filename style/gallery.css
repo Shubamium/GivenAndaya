@@ -58,9 +58,7 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     overflow: hidden;
 }
 
-#book .page.odd::before{
-    content:"aaa";
-}
+
 
 #book .page .decor{
     position: absolute;
@@ -216,4 +214,52 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 
 .pic-border{
     border: .4vw solid white;
+}
+
+
+
+.page.baby .pics {
+    display:flex;
+    gap: 4vh;
+    flex-direction: column;
+}
+
+    .page.baby .pics img{
+        max-height: 32vh;
+        object-fit: cover;
+    }
+    .page.baby .pics .bottom{
+        display: flex;
+        justify-content: center;
+        gap: 4vw;
+    }
+
+
+.tilt-l{
+    rotate: -2deg;
+}
+
+.tilt-r{
+    rotate: 2deg;
+}
+
+.page.baby-second .pics img{
+    max-height: 32vh;
+}
+
+.page.baby-second .pics{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 3vh;
+}
+.page.baby-second .pics .top{
+    display: flex;
+    gap: 4vw;
+    margin: 2vh;
+}
+
+.mg2vh{
+    margin: 2vh;
 }
