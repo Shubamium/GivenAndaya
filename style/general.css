@@ -187,6 +187,7 @@ nav{
     aspect-ratio: 1/1;
     font-size: 2.2rem;
     padding: .4em;
+    height: fit-content;
     padding-top: .2em;
     color: var(--purple);
     border: min(3px, 5vh) solid var(--darkerPurple);
