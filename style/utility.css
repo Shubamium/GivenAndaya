@@ -132,11 +132,8 @@
     position: absolute;
     pointer-events: none;
     bottom: -10px;
-    /* max-height: 200px; */
-    /* background-color: green; */
     
     z-index: -20;
-    /* background-color: green; */
 }
 .no-pointer{
     pointer-events: none;
