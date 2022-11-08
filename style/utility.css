@@ -105,6 +105,11 @@
     outline: min(4px,.65vh) solid white;
 }
 
+.ol-white-dashed{
+    outline: min(4px,.65vh) dashed white;
+}
+
+
 .ol-purple{
     outline: min(4px, .65vh) solid var(--darkerPurple);
 }

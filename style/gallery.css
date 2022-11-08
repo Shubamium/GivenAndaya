@@ -28,11 +28,20 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     width: 100vw;
     height: 100vh;
 
-    background: url('../media/image/background/plaid-2.png'), rgba(66, 17, 114, 0.555);
-
+    background: url('../media/image/background/plaid-2.png'), rgba(72, 47, 82, 0.603);
+    background-size: 20vmin 20vmin;
     background-blend-mode: multiply;
+    animation: bg-anim 255s linear infinite;
 }
+@keyframes bg-anim {
+    from{
+        background-position: 0% 0%;
+    }
+    to{
+        background-position: 300% -300%;
 
+    }
+}
 
 #book .page{
     background-color: white;
@@ -46,6 +55,7 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     justify-content: center;
 
     position: relative;
+    overflow: hidden;
 }
 
 #book .page.odd::before{
@@ -103,8 +113,10 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 
 #book .cover{
     width: 100vw;
-    background-color: rgb(167, 76, 252);
-    box-shadow: inset 1em 1em 50px rgba(62, 32, 71, 0.226);
+    background:rgb(226, 200, 255);
+    background-size: 20vmin 20vmin;
+    background-blend-mode: multiply;
+    box-shadow: inset .4em .41em 50px rgba(62, 32, 71, 0.226);
     
 }
 
@@ -135,3 +147,32 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
         opacity: 1;
         transition: all 250ms ease;
     }
+
+
+#book .cover.front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+    #book .cover.front .heading{
+        padding: .1em .5em;
+        font-size: 1.5rem;
+    }
+
+    #book .cover.front img{
+        max-width: 35vw;
+        filter: brightness(120%);
+    }
+
+    #book .cover.front .nametag{
+        min-height: 20vh;
+    }
+
+
+
+.panel-dark{
+    background: #6D4B83;
+}
