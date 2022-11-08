@@ -113,7 +113,7 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 
 #book .cover{
     width: 100vw;
-    background:rgb(226, 200, 255);
+    background:rgb(192, 161, 227);
     background-size: 20vmin 20vmin;
     background-blend-mode: multiply;
     box-shadow: inset .4em .41em 50px rgba(62, 32, 71, 0.226);
@@ -154,25 +154,66 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1.3em;
 }
 
     #book .cover.front .heading{
         padding: .1em .5em;
-        font-size: 1.5rem;
+        font-size: 3vw;
     }
 
     #book .cover.front img{
-        max-width: 35vw;
+        width: 35vw;
         filter: brightness(120%);
     }
 
     #book .cover.front .nametag{
-        min-height: 20vh;
+        min-height: 25vh;
+        background-color: #E5CAFF;
+        border: .3vw dashed #C8A5F4;
+        width: 30vw;
+        border-radius: 1vw;
+        text-align: center;
+        padding: 2em 1em;
+        padding-top: 4vh;
+    }
+
+    #book .cover.front .nametag h2{
+        font-size: 2.7vw;
+        margin: 0;
+        line-height: 80%;
+        color: var(--darkerPurple);
+    }
+
+    #book .cover.front .nametag h2:nth-child(3){
+        font-size: 2vw;
+    }
+    
+
+    #book .cover.front .nametag hr{
+        font-weight: bold;
+        margin: .5em auto;
+        margin-bottom: 3vh;
+        border: none;
+        max-width: 50%;
+
+        border-bottom: .25vw solid #C8A5F4;
+        border-radius: 2em;
+    }
+    #book .cover.cover.front .nametag hr:nth-child(2){
+        max-width: 75%;
     }
 
 
 
 .panel-dark{
     background: #6D4B83;
+}
+
+.shadow{
+    box-shadow: -.4vw .5vw 1vw rgba(0, 0, 0, 0.25);
+}
+
+.pic-border{
+    border: .4vw solid white;
 }
