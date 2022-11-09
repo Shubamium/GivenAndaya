@@ -11,6 +11,9 @@
 .ft-alt{
     font-family: var(--altFont);
 }
+.ft-third{
+    font-family: var(--thirdFont);
+}
 
 .ft-initial{
     font-family: initial;

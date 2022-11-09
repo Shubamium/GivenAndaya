@@ -307,8 +307,17 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 .img-mw{
     max-width: 30vw;
 }
+.img-mw-big{
+    max-width: 45vw;
+}
 .img-mh{
     max-width: 40vh;
+}
+.img-mh-small{
+    max-width: 25vh;
+}
+.img-mh-big{
+    max-width: 70vh;
 }
 
 
@@ -429,13 +438,11 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     font-weight: bold;
 }
 .page.silly .text{
-    margin: 2vh;
     padding: 2vh 2vw;
-    background-color:#C8A5F4;
-    color: aliceblue;
-    font-family: var(--secondaryFont);
+    /* background-color:#C8A5F4; */
     font-size: 3vw;
-    font-weight: bold;
+    font-weight: bold; 
+    text-align: center;
 }
 
 
@@ -484,4 +491,49 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 
 .page.ga .paragraph{
     max-width: 15vw;
+}
+
+p{
+    font-size: 2vw;
+}
+
+
+.page.story .paragraph{
+    font-family: var(--thirdFont);
+    display: block;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+.page.story .stories{
+    max-width: 40vw;
+}
+
+
+.sideways{
+    writing-mode: sideways-rl;
+    max-width: 40vw;
+}
+
+
+.page.dog-one .flex-dir{
+    gap: 0;
+}
+
+
+.more-left{
+    left: -5vw;
+}
+
+
+.page.dog-two .flex-dir .paragraph{
+    font-size: 2vw;
+}
+
+.page.dog-half .flex-dir{
+    gap: 0;
+}
+
+.page.puma .pics{
+    margin: 0 0 0 4vw;
 }
