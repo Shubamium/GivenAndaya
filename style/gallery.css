@@ -279,6 +279,11 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     padding: 1vh 3vw;
 }
 
+.page.section-div .heading{
+    font-size: 5vw;
+    padding: 1vh 3vw;
+    background-color: #a38cc2;
+}
 .page.childhood .page-content img{
     max-height: 28vh;
 }
@@ -292,6 +297,10 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 }
 .page.childhood .page-content .left img:first-child{
     margin-bottom: 2vh;
+}
+
+.page.childhood .page-content .right img{
+    scale: 1.2;
 }
 
 
@@ -404,4 +413,75 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 
 .page.freeze .text-part p{
     font-size: 2vw;
+}
+
+.page.guy .pics img{
+    width: min(35vw, 60vh);
+}
+
+.page.guy .pics .text{
+    margin: 2vh;
+    padding: 2vh 2vw;
+    background-color: #6D4B83;
+    color: aliceblue;
+    font-family: var(--secondaryFont);
+    font-size: 3vw;
+    font-weight: bold;
+}
+.page.silly .text{
+    margin: 2vh;
+    padding: 2vh 2vw;
+    background-color:#C8A5F4;
+    color: aliceblue;
+    font-family: var(--secondaryFont);
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+
+.flex-dir{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page.ita .text{
+    font-family: var(--altFont);
+    font-size: 4vw;
+}
+
+
+
+.page.sect-three .page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.page.sect-three .page-content .left img{
+    max-height: 35vh;
+}
+
+.grid-four{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-four > *{
+    display: block;
+}
+
+
+
+.page.ga .paragraph{
+    max-width: 15vw;
 }
