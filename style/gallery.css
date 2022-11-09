@@ -342,3 +342,66 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 .page.japan .text-part p{
     font-size: 2.5vmin;
 }
+
+
+
+.page.baby-fourth .pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap:5vw;
+    padding: 10vw;
+}
+.page.baby-fourth .pics img{
+    max-width: 15vw;
+}
+
+
+.page.baby-fifth .pics{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+
+}
+
+.page.baby-fifth .pics img{
+    max-width: 30vw;
+}
+
+.page img:hover{
+    transform: scale(1.4);
+    transition: all 450ms ease;
+    z-index:5000;
+    position: relative;
+}
+.page img{
+    transition: all 450ms ease;
+}
+
+
+.page.freeze{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+.page.freeze .text-part{
+    max-width: 40vw;
+    background-color: #E5CAFF;
+    padding: 2vh 2vw;
+    border: .45vw dashed white;
+}
+
+.page.freeze .pics img{
+    filter: drop-shadow(-.21vw .21vw .5vw rgba(0, 0, 0, 0.218));
+}
+
+.page.freeze .text-part p{
+    font-size: 2vw;
+}
