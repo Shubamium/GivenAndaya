@@ -60,7 +60,7 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 
 
 
-#book .page .decor{
+#book .page .decor,#book .cover .decor{
     position: absolute;
     top: 0;
     left: 0%;
@@ -107,6 +107,125 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
    
 }
 
+#book .cover .decor > *{
+    position: absolute;
+}
+
+.decor .sun1{
+    z-index: 1000;
+    /* background-color: red; */
+    top: -10vh;
+    right: -8vw;
+    scale: .5;
+    rotate: 90deg;
+}
+
+.decor .flower1{
+    z-index: 1000;
+    /* background-cimage.pngolor: red; */
+    bottom: 5vh;
+    right: -1vw;
+    max-width: 14vw;
+    transform: scaleX(-1);
+
+}
+
+.decor .smile1{
+    z-index: 1000;
+    /* background-cimage.pngolor: red; */
+    bottom: 2vh;
+    left: 1vw;
+    max-width: 15vw;
+    rotate: -20deg;
+
+}
+.decor .wings1{
+    z-index: 1000;
+    /* background-cimage.pngolor: red; */
+    top: 25vh;
+    left: 2vw;
+    max-width: 15vw;
+    rotate: -20deg;
+}
+
+.decor .rainbow{
+    z-index: 1000;
+    /* background-cimage.pngolor: red; */
+    bottom: 12vh;
+    left: -2vw;
+    max-width: 20vw;
+    rotate: -20deg;
+}
+
+.decor .teddy1{
+    position: absolute;
+    width: 10vw;
+    bottom: 1vw;
+    left: 8vw;
+    z-index: 1000;
+}
+
+.decor .foot1{
+    width: 7vw;
+    top: 10vw;
+    left: 2vw;
+    rotate: 140deg;
+    opacity: .3;
+}
+.decor .pacif{
+    width: 10vw;
+    top: 20vw;
+    left: 34vw;
+    z-index: 100;
+}
+
+
+.decor .foot2{
+    width: 7vw;
+    top: 17vw;
+    left: 5vw;
+    rotate: 150deg;
+    opacity: .3;
+}
+
+.decor .foot3{
+    width: 7vw;
+    top: 42vh;
+    left: 5vw;
+    rotate: 60deg;
+    opacity: .3;
+}
+
+.decor .foot4{
+    width: 7vw;
+    top: 28vh;
+    left: 22vw;
+    rotate: 77deg;
+    opacity: .3;
+}
+
+.decor .foot5{
+    width: 7vw;
+    top: 38vh;
+    right: 2vw;
+    rotate: 130deg;
+    opacity: .3;
+}
+
+.decor .sparkle{
+    width: 20vw;
+    top: 45vh;
+    right: .4vw;
+    z-index: 100;
+    rotate: 10deg;
+}
+.decor .sparkle2{
+    width: 25vw;
+    top: 65vh;
+    left: .4vw;
+    z-index: 100;
+    rotate: -4deg;
+}
 
 
 #book .cover{
@@ -453,6 +572,12 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     justify-content: center;
     align-items: center;
 }
+
+
+.flex-dir.nogap{
+    gap: 0;
+}
+
 .flex{
     display: flex;
     gap: 5vh;
@@ -483,10 +608,15 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
     grid-template-rows: 1fr 1fr;
 }
 
-.grid-four > *{
+.grid-four > *,.grid-two > *{
     display: block;
 }
 
+
+.grid-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 .page.ga .paragraph{
@@ -536,4 +666,32 @@ p{
 
 .page.puma .pics{
     margin: 0 0 0 4vw;
+}
+
+.page.travel-title{
+
+}
+
+.page.travel-title .flex-dir{
+    gap:.5vh;
+}
+
+.page.page.travel-title .place{
+    font-size: 10vw;
+    margin: -4vh;
+    color: #6D4B83;
+}
+
+
+.page.chaotic .paragraph{
+    position: relative;
+}
+.page.chaotic .paragraph::after{
+    content: url('../media/image/decor/smile.png');
+    position: absolute;
+    bottom: -20vh;
+    right:  -17vw;
+    /* background-color: red; */
+    scale: .5;
+    rotate: 20deg;
 }
