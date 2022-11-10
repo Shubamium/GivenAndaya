@@ -215,18 +215,64 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 .decor .sparkle{
     width: 20vw;
     top: 45vh;
-    right: .4vw;
+    right: -2vw;
     z-index: 100;
     rotate: 10deg;
 }
 .decor .sparkle2{
     width: 25vw;
     top: 65vh;
-    left: .4vw;
+    left: -4vw;
     z-index: 100;
     rotate: -4deg;
 }
 
+
+.decor .zzz{
+    z-index: 1000;
+    top: 10vh;
+    right: 7vw;
+    /* background-color: red; */
+    width: 15vw;
+}
+
+
+.decor .linefx{
+    top: 10vh;
+    left: 10vw;
+    transform: translate(-50%);
+    width: 20vw;
+    rotate: -4deg;
+}
+
+.decor .linefx2{
+    top: 10vh;
+    left: 40vw;
+    transform: translate(-50%) scaleX(-1);
+    width: 20vw;
+    rotate: 8deg;
+}
+.decor .bunny{
+    top: 17vh;
+    right: -1vw;
+    width: 20vw;
+    rotate: 8deg;
+}
+.decor .momkid{
+    bottom: 0;
+    left: 0;
+    width: 20vw;
+}
+.decor .umaru{
+    bottom: 2vh;
+    right: 5vw;
+    width: 10vw;
+}
+.decor .baloon{
+    top: 2vh;
+    left: 5vw;
+    width: 10vw;
+}
 
 #book .cover{
     width: 100vw;
@@ -426,17 +472,32 @@ nav .navigation li a, nav .action .btn, nav .action, nav .action i{
 .img-mw{
     max-width: 30vw;
 }
+.img-mw-medi{
+    max-width: 37vw;
+}
 .img-mw-big{
     max-width: 45vw;
 }
+
+.img-mw-semi{
+    max-width: 24vw;
+}
+.img-mw-mini{
+    max-width: 19vw;
+}
+.img-mw-small{
+    max-width: 15vw;
+}
+
+
 .img-mh{
-    max-width: 40vh;
+    max-height: 40vh;
 }
 .img-mh-small{
-    max-width: 25vh;
+    max-height: 25vh;
 }
 .img-mh-big{
-    max-width: 70vh;
+    max-height: 70vh;
 }
 
 
@@ -686,12 +747,15 @@ p{
 .page.chaotic .paragraph{
     position: relative;
 }
-.page.chaotic .paragraph::after{
-    content: url('../media/image/decor/smile.png');
-    position: absolute;
-    bottom: -20vh;
-    right:  -17vw;
+
+
+.decor .smile2{
+    bottom: 25vh;
+    right:  3vw;
+    /* transform: translate(-50%); */
     /* background-color: red; */
-    scale: .5;
     rotate: 20deg;
+    width: 12vw;
+    z-index: 100;
 }
+
