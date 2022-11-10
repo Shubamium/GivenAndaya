@@ -35,7 +35,7 @@ main{
     grid-template-areas: 
     'pics pics discord discord'
     'ig ig discord discord';
-    height: 400px;
+    min-height: 400px;
 
     gap: 2em;
 }
@@ -185,4 +185,21 @@ main{
     margin-top: 20px;
     color: white;
     text-indent: 4px;
+}
+
+
+@media screen and (max-width:800px) {
+    .contacts{
+        grid-template-areas: 
+        'pics pics'
+        'discord discord'
+        'ig ig';
+        padding: 0 1em;
+    }
+    .contacts p {
+        font-size: 1rem;
+    }
+    .contacts i {
+        font-size: 2rem;
+    }
 }
