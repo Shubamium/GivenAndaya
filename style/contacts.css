@@ -2,6 +2,9 @@ nav{
     background-color: var(--purple);
 }
 
+.container{
+    overflow-x: initial;
+}
 main{
     min-height: calc(440px + 40vh);
     display: flex;
