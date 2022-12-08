@@ -18,6 +18,9 @@
 .ft-initial{
     font-family: initial;
 }
+.ft-fallback{
+    font-family: var(--fallbackFont);
+}
 .cr-blue{
     color: var(--blue);
 }
